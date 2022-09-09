@@ -1,0 +1,20 @@
+html, body {
+	font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.card {
+	width: 300px;
+	margin: 0 auto;
+	padding: 30px;
+	background-color: #f5f5f5;
+	box-shadow: 7px 12px 23px -9px rgba(34, 60, 80, 0.6), -7px 12px 23px -9px rgba(34, 60, 80, 0.6);
+	border-radius: 5px;
+}
+
+.card-body-stars {
+	display: flex;
+	column-gap: 10px;
+	list-style-type: none;
+	padding: 0;
+}
+
