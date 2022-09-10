@@ -1,0 +1,96 @@
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.traninig-block {
+	width: 700px;
+	margin: 0 auto;
+}
+
+.traninig-block * {
+	font-size: 18px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #282828;
+}
+
+.form {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.form label {
+	display: block;
+	width: fit-content;
+	margin-bottom: 15px;
+}
+
+.form input {
+	padding: 10px 15px;
+	border-radius: 5px;
+	border: solid #282828 2px;
+	outline: none;
+}
+
+.form button {
+	background-color: #fff;
+	padding: 10px 25px;
+	border: solid #282828 2px;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.form button:hover {
+	background: #e3e3e3;
+}
+
+.traninig-block table {
+	border-collapse: collapse;
+	table-layout: fixed;
+  width: 100%;
+}
+
+.traninig-block thead td {
+	padding: 30px 0;
+}
+
+.traninig-block td {
+	text-align: center;
+}
+
+.traninig-block table tbody {
+	border-radius: 20px;
+	box-shadow: 0 0 0 2px #282828;
+}
+
+.traninig-block tbody td {
+	padding-bottom: 15px;
+} 
+
+.traninig-block tbody tr:first-child td {
+	padding-top: 20px;
+} 
+
+.traninig-block tbody tr:last-child td{
+	padding-bottom: 20px;
+}
+
+.item-action {
+	display: flex;
+	justify-content: center;
+}
+
+.item-action div {
+	cursor: pointer;
+}
+
+.item-action div:last-child {
+	margin-left: 10px;
+}
+
+.item-action div:hover {
+	color: red;
+}
