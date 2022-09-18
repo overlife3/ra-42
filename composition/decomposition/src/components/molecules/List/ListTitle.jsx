@@ -12,8 +12,8 @@ export function ListTitle(props) {
 		<ul {...restProps} className={classNameCp}>
 			{data.map((item, index) => {
 				return (
-					<li>
-						<LinkTitle key={index} href={item.url} className={item.isActive ? 'active' : ''}>{item.text}</LinkTitle>
+					<li key={index} >
+						<LinkTitle href={item.url} className={item.isActive ? 'active' : ''}>{item.text}</LinkTitle>
 					</li>
 				)
 			})}
