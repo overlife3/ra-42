@@ -1,0 +1,79 @@
+html, body {
+	font-size: 25px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.watches {
+	width: 800px;
+	margin: 0 auto;
+}
+
+form {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 50px;
+}
+
+form .input-block label {
+	cursor: pointer;
+}
+
+form .input-block input {
+	font-size: 20px;
+	outline: none;
+	border: 2px solid black;
+	width: 270px;
+	height: 40px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+form button {
+	box-sizing: border-box;
+	background-color: #fff;
+	border: 2px solid black;
+	width: 150px;
+	height: 40px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+form button:active {
+	transform: scale(0.85)
+}
+
+.watch-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 30px;
+}
+
+.card-watch {
+	position: relative;
+}
+
+.card-watch p {
+	text-align: center;
+}
+
+.watch {
+	border: 2px solid black;
+	height: 30px;
+	text-align: center;
+}
+
+
+.btn-remove {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	top: 0;
+	right: 0;
+	border: 2px solid black;
+	border-radius: 50%;
+	cursor: pointer;
+}
