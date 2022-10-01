@@ -3,6 +3,7 @@ import { nanoid } from "nanoid";
 
 import CardWatch from "./CardWatch";
 import Form from "./Form";
+import validInput from "../utils/validInput";
 
 function Watches() {
 	const [watchList, setWatchList] = useState([
@@ -22,7 +23,13 @@ function Watches() {
 		for (let [key, value] of formData.entries()) {
 			obj = {...obj, [key]: value}
 		}
-		setWatchList(prevList => [...prevList, obj])
+
+		if (validInput(obj.timezone)) {
+			alert(validInput(obj.timezone))
+		}	else {
+			setWatchList(prevList => [...prevList, obj])
+		}
+
 	}
 
 	const onRemoveItem = (id) => {

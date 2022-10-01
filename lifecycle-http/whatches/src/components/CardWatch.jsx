@@ -12,7 +12,6 @@ function CardWatch({ nameZone, onRemoveItem, id, timeZone }) {
 		const time = validTime(timeOffset)
 		setUpdated(time)
 		setTime(time)
-		console.log(time)
 	}
 
 	useEffect( () => {
