@@ -2,20 +2,20 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams, Link } from "react-router-dom";
 import { actionsItem } from "../redux/itemReducer";
-
+import { ErrorComponent } from "./ErrorComponent";
 export function DetailsItem() {
 	const dispatch = useDispatch()
 	const { id } = useParams() 
-	useEffect(() => {
+	const dispatchAction = () => {
 		dispatch(actionsItem.detailsRequest(id))
-	}, [])
+	}
+	useEffect(dispatchAction, [])
 	const { item, loading, error } = useSelector(store => store.item)
-
 	
 	return (
 		<>
 			{loading && <div>Loading ...</div>}
-			{error && <div>Error: {error}</div>}
+			{error && <ErrorComponent error={error} onClick={dispatchAction} />}
 			{!loading && !error && 
 			<div>
 				<div className="name">name: {item?.name}</div>
