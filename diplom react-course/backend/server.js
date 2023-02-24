@@ -1,3 +1,6 @@
+// "prestart": "npm install",
+// "start": "forever server.js",
+// "watch": "forever -w server.js"
 const http = require('http');
 const fs = require('fs');
 const Koa = require('koa');
